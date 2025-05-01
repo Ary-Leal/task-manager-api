@@ -1,5 +1,6 @@
 const express = require('express');
 const Task = require('../models/Task');
+const validateTask = require('../middleware/validateTask');
 
 const router = express.Router();
 
@@ -23,5 +24,8 @@ router.delete('/:id', async (req, res) => {
     await Task.findByIdAndDelete(req.params.id);
     res.json({ message: 'Tarefa excluída' });
 });
+
+router.post('/', validateTask, async (req, res) => { ... });
+router.put('/:id', validateTask, async (req, res) => { ... });
 
 module.exports = router;
