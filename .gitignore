@@ -1,0 +1,28 @@
+# 🗄️ Ignorar dependências do Node.js
+node_modules/
+
+# 🔑 Ignorar arquivos de configuração sensíveis
+.env
+
+# 📦 Ignorar diretórios de build e cache
+dist/
+build/
+.cache/
+
+# 🖼️ Ignorar uploads de arquivos temporários
+uploads/
+
+# 🔍 Ignorar logs e relatórios
+*.log
+logs/
+npm-debug.log*
+
+# 🚀 Ignorar testes e relatórios de cobertura
+coverage/
+jest-test-results.json
+
+# 📸 Ignorar arquivos de sistema e IDEs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
